@@ -13,7 +13,77 @@
 
     <h1>Contato</h1>
     
-
+    <form name="Cadastro" method="post" action="exitocontato.html">
+        <label for="TxtSeuNome">Seu Nome*</label>
+        <br />
+        <input
+          type="text"
+          id="txtSeuNome"
+          placeholder="Digite Seu Nome"
+          maxlength="20"
+          minlength="3"
+          title="SeuNome"
+          required
+        />
+        <br />
+        <br />
+        <label for="Senha">Senha*</label>
+        <br />
+        <input
+          type="password"
+          id="Senha"
+          placeholder="Digite Sua Senha"
+          maxlength="20"
+          minlength="3"
+          title="SuaSenha"
+          required
+        />
+        <br />
+        <br />
+        <label for="Telefone">Telefone</label>
+        <br />
+        <input
+          type="tel"
+          id="Telefone"
+          placeholder="Digite Seu Telefone"
+          title="SeuTelefone"
+          maxlength="11"
+          minlength="11"
+          required
+        />
+        <br />
+        <br />
+        <label for="Assunto">Assunto*</label>
+        <br />
+        <select name="Assunto" id="Assunto" title="SelecioneUmAssunto" required>
+          <option value="Duvidas" selected>Selecione Opção Desejada</option>
+          <option value="Duvidas">Duvidas</option>
+          <option value="Elogios">Elogios</option>
+          <option value="Reclamacoes">Reclamações</option>
+          <option value="Solicitacoes">Solicações</option>
+          <option value="Outros">Outros</option>
+        </select>
+        <br />
+        <br />
+        <label for="Mensagem">Mensagem*</label>
+        <br />
+        <textarea
+          name="Mensagem"
+          id="Mensagem"
+          title="EscrevaSuaMensagem"
+          cols="45"
+          rows="15"
+        ></textarea>
+        <br />
+        <br />
+        <input type="checkbox" id="Chbx" title="EnviarCópia" />
+        <label for="Chbx">Enviar Uma Cópia Para Você</label>
+        <br />
+        <br />
+        <button type="submit" name="Enviar" title="ConcluirFormulário">
+          Enviar Mensagem
+        </button>
+      </form>
 
     <br>
     <br>
